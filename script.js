@@ -325,7 +325,7 @@ const foodItems = [
 
 const listAllFoodItems = () => {
     const allFoodItems = foodItems.map(item => item);
-    console.log("All food items: ", allFoodItems);
+    console.log("All food items: \n", allFoodItems);
 }
 
 listAllFoodItems();
@@ -388,7 +388,7 @@ listDairyFood();
 
 const listCalorieSurplus = () => {
     const calorieSurplus = foodItems.filter(item => item.calorie > 100);
-    console.log("Food with alories above 100: ", calorieSurplus);
+    console.log("Food with alories above 100: \n", calorieSurplus);
 }
 
 listCalorieSurplus();
@@ -397,7 +397,7 @@ listCalorieSurplus();
 
 const listCalorieDeficit = () => {
     const calorieDeficit = foodItems.filter(item => item.calorie < 100);
-    console.log("Food with alories below 100: ", calorieDeficit);
+    console.log("Food with alories below 100: \n", calorieDeficit);
 }
 
 listCalorieDeficit();
@@ -406,7 +406,7 @@ listCalorieDeficit();
 
 const listProtienDescending = () => {
     const protienDescending = foodItems.map(item => item).sort((item1,item2) => item2['protiens'] - item1['protiens']);
-    console.log("Food with protien content highest to lowest: ", protienDescending);
+    console.log("Food with protien content highest to lowest: \n", protienDescending);
 }
 
 listProtienDescending();
@@ -415,7 +415,7 @@ listProtienDescending();
 
 const listCarbAscending = () =>{
     const carbAscending = foodItems.map(item => item).sort((item1,item2) => item1['cab'] - item2['cab']);
-    console.log("Food with cab content lowest to highest: ", carbAscending);
+    console.log("Food with cab content lowest to highest: \n", carbAscending);
 }
 
 listCarbAscending();
