@@ -405,7 +405,7 @@ listCalorieDeficit();
 // Function to list all the food items with highest protien content to lowest
 
 const listProtienDescending = () => {
-    const protienDescending = allFoodItems.map(item => item).sort((item1,item2) => item2['protiens'] - item1['protiens']);
+    const protienDescending = [...allFoodItems].sort((item1,item2) => item2['protiens'] - item1['protiens']);
     console.log("Food with protien content highest to lowest: \n", protienDescending);
 }
 
@@ -414,7 +414,7 @@ listProtienDescending();
 //Function to list all the food items with lowest cab content to highest
 
 const listCarbAscending = () =>{
-    const carbAscending = allFoodItems.map(item => item).sort((item1,item2) => item1['cab'] - item2['cab']);
+    const carbAscending = [...allFoodItems].sort((item1,item2) => item1['cab'] - item2['cab']);
     console.log("Food with cab content lowest to highest: \n", carbAscending);
 }
 
