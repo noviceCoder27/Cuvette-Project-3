@@ -388,7 +388,7 @@ listDairyFood();
 
 const listCalorieSurplus = () => {
     const calorieSurplus = allFoodItems.filter(item => item.calorie > 100);
-    console.log("Food with alories above 100: \n", calorieSurplus);
+    console.log("Food with calories above 100: \n", calorieSurplus);
 }
 
 listCalorieSurplus();
@@ -397,7 +397,7 @@ listCalorieSurplus();
 
 const listCalorieDeficit = () => {
     const calorieDeficit = allFoodItems.filter(item => item.calorie < 100);
-    console.log("Food with alories below 100: \n", calorieDeficit);
+    console.log("Food with calories below 100: \n", calorieDeficit);
 }
 
 listCalorieDeficit();
